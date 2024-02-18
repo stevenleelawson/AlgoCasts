@@ -11,6 +11,10 @@ function maxChar(str) {
 	// turns str into arr to iterate over if use .forEach
 	let strArr = str.split('')
 
+	// helper vars
+	let max = 0;
+	let maxChar = '';
+
 	// setup obj to be used for comparisons
 	const charMap = {}
 
@@ -22,7 +26,19 @@ function maxChar(str) {
 		charMap[char]++
 	}
 
-	console.log('charrrr', charMap)
+	// for (let of) => NOT object
+	// for (let in) => CAN iterate over objects
+	// console.log(charMap)
+
+	for (let char in charMap) {
+		if (charMap[char] > max) {
+			max = charMap[char]
+			maxChar = char;
+		}
+	}
+	
+	console.log(maxChar)
+	return maxChar;
 }
 
 module.exports = maxChar;
