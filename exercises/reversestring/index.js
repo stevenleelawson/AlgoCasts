@@ -7,6 +7,28 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {
+	
+}
+
+module.exports = reverse;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	// sol 1
 	
 	// const reversedStr = str.split('').reverse().join('');
@@ -15,11 +37,11 @@ function reverse(str) {
 	
 	// sol 2
 
-	let reversed = ''
-	for (char of str) {
-		reversed = char + reversed;
-	}
-	return reversed;
+	// let reversed = ''
+	// for (char of str) {
+	// 	reversed = char + reversed;
+	// }
+	// return reversed;
 
 	// sol 3
 
@@ -29,6 +51,3 @@ function reverse(str) {
 	// 	return arrItem + acc;
 	// }, '')
 	// return reversedStr;
-}
-
-module.exports = reverse;
